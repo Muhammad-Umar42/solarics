@@ -16,10 +16,10 @@
 .banner {
     background-image: url(./image/background.png);
     width: 100%;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 63px;
 }
 
 .section_1 {
@@ -46,6 +46,7 @@
     max-width: 1280px;
     margin: auto;
     padding-bottom: 38px;
+    margin-bottom: 5px;
 }
 
 .section_2 h4 {
@@ -105,39 +106,96 @@
     width: 42%;
 }
 
+.col-1 {
+    width: 95% !important;
+}
+
+.col-2 {
+    width: 47% !important;
+}
+
+.col-1-label {
+    width: 23% !important;
+}
+
+.col-2-label {
+    width: 45% !important;
+}
+
+.sectionHide {
+    display: none;
+}
+
 /* ///////-----------section_2-------------//////// */
 
 
 /* ///////-----------section_3-------------//////// */
 .section_3 {
     color: #3C3C3B;
-    width: 90%;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 63px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.section_3-col-1 {
     max-width: 1280px;
     margin: auto;
-}
-
-.footer {
     display: flex;
     justify-content: space-between;
+    padding: 17px 0;
     align-items: center;
+
 }
 
-.footer h5 {
+
+
+.section_3 h5 {
     font-size: 18px;
     font-weight: 500;
+
 }
 
-.install-image img {
-    padding: 10px 0 6px 0;
-}
 
 /* ///////-----------section_3-------------//////// */
 
-.footer {
-    padding: 17px 0;
+
+/* ///////////////////////////finish///////////////// */
+.main {
+    width: 65%;
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+.col-8 {
+    max-width: 280px;
+}
 
+.col-8 input {
+    padding: 15px;
+    width: 95%;
+}
+
+.col-9 {
+    width: 95%;
+    max-width: 255px;
+    margin-top: 47px;
+}
+
+.col-9 button {
+    padding: 16px;
+    width: 100%;
+    background: #F9C929;
+    color: #FFF;
+    border: none;
+}
+
+/* ///////////////////////////finish///////////////// */
 
 
 
@@ -161,7 +219,7 @@
         display: block;
     }
 
-    .footer {
+    .section_3-col-1 {
         display: block;
     }
 
@@ -184,12 +242,15 @@
     }
 
     .section_2 img {
-        width: 100px;
+        width: 130px;
     }
 
     .gridS-2 {
         width: 72%;
     }
+
+
+
 }
 
 /* //////////////////////responsive/////////////////////// */
